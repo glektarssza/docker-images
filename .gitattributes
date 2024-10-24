@@ -1,0 +1,8 @@
+# By default all files are text with Unix-style line endings
+* text eol=lf
+
+# JARs are binary
+*.jar binary
+
+# But actually run them through Git LFS
+*.jar filter=lfs diff=lfs merge=lfs -text
