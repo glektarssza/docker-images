@@ -50,11 +50,11 @@ USER minecraft
 WORKDIR /home/minecraft
 
 #-- Download the mod pack
-RUN wget -O modpack.zip https://mediafilez.forgecdn.net/files/5840/26/Meatballcraft-Server-beta-0.16.5-hotfix2.zip
+RUN wget -O modpack.zip https://mediafilez.forgecdn.net/files/5842/797/Meatballcraft-beta-0.16.5-hotfix3.zip
 
 #-- Extract the mod pack and delete the downloaded zip
 RUN 7zz x modpack.zip && \
-    mv Meatballcraft-Server-beta-0.16.5-hotfix2/* . && \
+    mv Meatballcraft-Server-beta-0.16.5-hotfix3/* . && \
     rm modpack.zip
 
 #-- Remove Journey Map
