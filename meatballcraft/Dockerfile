@@ -50,7 +50,7 @@ USER minecraft
 WORKDIR /home/minecraft
 
 #-- Download the mod pack
-RUN wget -O modpack.zip https://mediafilez.forgecdn.net/files/5842/797/Meatballcraft-beta-0.16.5-hotfix3.zip
+RUN wget -O modpack.zip https://mediafilez.forgecdn.net/files/5842/863/Meatballcraft-Server-beta-0.16.5-hotfix3.zip
 
 #-- Extract the mod pack and delete the downloaded zip
 RUN 7zz x modpack.zip && \
